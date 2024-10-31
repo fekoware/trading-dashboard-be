@@ -47,7 +47,7 @@ void OnTimer()
       }
       else
       {
-         PrintFormat("Failed to open file in OnTimer.Error ID: %d", GetLastError());
+         PrintFormat("Failed to open file in OnTimer. Error ID: %d", GetLastError());
       }
    
 }
