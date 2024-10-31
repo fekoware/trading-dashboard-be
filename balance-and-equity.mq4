@@ -21,7 +21,7 @@ int OnInit()
    }
    else
    {
-      PrintFormat("Failed to open file on init. Error ID: %d", GetLastError());
+      PrintFormat("Failed to open file on init.Error ID: %d", GetLastError());
    }
 
    EventSetTimer(86400);
