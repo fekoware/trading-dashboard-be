@@ -19,18 +19,12 @@ const seed = ({ accountBalance, accountEquity, trades }) => {
       .then(() => {
         return createAccountBalanceTable();
       })
-      .then(() => {
-        return createAccountEquityTable();
-      })
       //populate tables
       .then(() => {
         insertTrades(trades);
       })
       .then(() => {
         insertAccountBalance(accountBalance);
-      })
-      .then(() => {
-        insertAccountEquity(accountEquity);
       })
   );
 };
@@ -65,15 +59,6 @@ const createAccountBalanceTable = () => {
   );
 };
 
-const createAccountEquityTable = () => {
-  return db.query(
-    `
-        id SERIAL PRIMARY KEY,              
-        balance NUMERIC(10, 5) NOT NULL,
-        date TIMESTAMP NOT NULL,
-        `
-  );
-};
 
 const insertTrades = (trades) => {
   const nestedTrades = trades.map((singleTrade) => {
