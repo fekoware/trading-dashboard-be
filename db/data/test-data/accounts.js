@@ -1,4 +1,4 @@
-[
+module.exports = [
     {date: "2023-08-30", account_balance: 206.63, account_equity: 206.63},
     {date: "2023-08-31", account_balance: 207.89, account_equity: 208.15},
     {date: "2023-09-01", account_balance: 206.95, account_equity: 207.20},

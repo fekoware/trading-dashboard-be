@@ -1,2 +1,2 @@
-exports.account_balance = require("./test-data/account_balance")
+exports.accounts = require("./test-data/accounts")
 exports.trades = require("./test-data/trades")
