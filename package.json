@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "setup-dbs": "psql -f ./db/setup.sql",
+    "seed": "node ./db/seeds/run_seed.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
